@@ -1,6 +1,8 @@
 name: Build Docker Image
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '0 2 * * 5'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -10,6 +12,6 @@ jobs:
         uses: elgohr/Publish-Docker-Github-Action@master
         with:
           # 下方的name格式为：Docker Hub ID/自定义镜像名称
-          name: Docker Hub ID/自定义镜像名称
+          name: cornsxhkv1/KX
           username: '${{ secrets.DOCKER_USERNAME }}'
           password: '${{ secrets.DOCKER_PASSWORD }}'
