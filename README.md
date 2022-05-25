@@ -1,6 +1,3 @@
-# 某容器云部署Xray高性能代理服务
-
-在某容器云部署Xray高性能代理服务，通过ws传输的(vmess、vless、trojan、shadowsocks、socks)等协议
 
 Kxxxb：https://owo.misaka.rest/koyeb-xray/
 
